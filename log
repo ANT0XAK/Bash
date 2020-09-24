@@ -1,0 +1,14 @@
+#!/bin/bash
+
+log()
+{
+ sed -n 's/] (WW)/] Warnings/gw war' /var/log/anaconda/X.log
+ sed -n 's/] (II)/] Information/gw info' /var/log/anaconda/X.log
+ cat info >> war
+ rm info
+
+ GREP_COLOR="1;33" grep --color="always" "Warnings" war >> color
+ GREP_COLOR="1;34" grep --color="always" "Information" war >> color
+ rm war && head -n 10 color && tail -n 10 color && rm color
+
+}
