@@ -1,0 +1,22 @@
+#!/bin/bash
+
+source MyColor
+reverse()
+{
+ local file_f=$1
+ local file_s=$2
+ [ -f "$file_f" ]
+
+ if [[$? != 0 ]]; then
+  echo -e "${RED}No Such File: $file_f${NC}"
+  return 1
+ fi
+
+ echo -e "${GREEN}Append or Rewrite ? [a/r]${NC}"
+ read -r ch
+ case $ch in
+   a) tac $file_f >> $file_s ;;
+   r) tac $file_f > $file_s ;;
+   *) echo -e "${RED}Incorrect choice${NC}" 1>&2 ;;
+ esac
+}
