@@ -1,0 +1,24 @@
+#!/bin/bash
+
+help()
+{
+
+echo "---------------------------------------------------------------------------------------------"
+echo "calc - ./MyScript.sh calc.sh (sum/div/mul/sub) (number1) (number2)"
+
+echo "search - ./MyScript.sh search.sh /home/user/lab1/ (echo)"
+
+echo "reverse - ./MyScript.sh reverse /home/user/lab1/text.txt"
+echo "/home/user/lab1/text1.txt"
+
+echo "srtlen - ./MyScript.sh strlen (hellonig&a)"
+
+echo "log - ./MyScript.sh log"
+
+echo "exit - ./MyScript.sh exit_ (number)"
+
+echo "help - ./MyScript.sh help"
+
+echo "---------------------------------------------------------------------------------------------"
+
+}
