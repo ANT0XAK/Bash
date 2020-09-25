@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source MyColor
 isnum()
 {
  if [ -n "$1" ] && [ "$1" -eq "$1" ] 2>/dev/null; then
@@ -16,9 +16,9 @@ exit_()
   exit 0
  fi
  if ! $(isnum $1); then
-  echo -e "${RED}EXIT CODE IS NOT A NUMBER{NC} 1>&2
+  echo -e "${RED}EXIT CODE IS NOT A NUMBER {NC}" 1>&2
   return 0
  fi 
- echo "exit_: &1"
+ echo "exit_: $1"
  exit $param2
 }

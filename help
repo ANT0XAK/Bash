@@ -4,9 +4,9 @@ help()
 {
 
 echo "---------------------------------------------------------------------------------------------"
-echo "calc - ./MyScript.sh calc.sh (sum/div/mul/sub) (number1) (number2)"
+echo "calc - ./MyScript.sh calc (sum/div/mul/sub) (number1) (number2)"
 
-echo "search - ./MyScript.sh search.sh /home/user/lab1/ (echo)"
+echo "search - ./MyScript.sh search /home/user/lab1/ (echo)"
 
 echo "reverse - ./MyScript.sh reverse /home/user/lab1/text.txt"
 echo "/home/user/lab1/text1.txt"

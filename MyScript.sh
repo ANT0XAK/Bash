@@ -11,14 +11,14 @@ source help
 case "$1" in
 "calc.sh")
 if (( $# == 4 ))
-then calc.sh "$2" "3" "4"
+then calc "$2" "$3" "$4"
 else echo "Only 4 arg" 1>&2
 fi
 ;;
 
 "search.sh")
 if (( $# == 3))
-then search.sh "$2" "$3"
+then search "$2" "$3"
 else echo "only 4 arg" 1>&2
 fi
 ;;
